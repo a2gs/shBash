@@ -16,8 +16,7 @@
 x=6
 y=5
 
-let z=$x+$y
-# Or: (( z = x + y ))
+(( z = x + y ))
 
 if (( x > y )); then
 	echo "x > y"
@@ -28,3 +27,7 @@ else
 fi
 
 echo "Sum: $z"
+
+# ---- let
+
+let "z=$x+$y"
