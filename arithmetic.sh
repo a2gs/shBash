@@ -31,6 +31,8 @@ fi
 
 echo "Sum: $z"
 
+echo $(( myvar = 7 + $(( vartwo = 4 + 4 )) ))
+
 # ---- let
 echo
 echo '"let" operations:'
