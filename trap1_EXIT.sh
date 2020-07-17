@@ -22,7 +22,7 @@ echo "Created temp file: $tempfile"
 # DEBUG: A Boolean representing debug mode
 trap "echo \"Deleting $tempfile by Ctrl+C\"; rm -f $tempfile" EXIT
 
-echo "sleeping 100 ... Ctrl+C to end and delete tem file $tempfile"
+echo "sleeping 100 ... Ctrl+C to end and delete temp file $tempfile (same process, but not set in this sample: SIGINT)"
 sleep 100
 
 echo "Sleep time finsihed and deleting tempfile $tempfile"
