@@ -17,6 +17,9 @@ tempfilePrefix=./tempfile
 tempfile=$(mktemp -q "$tempfilePrefix"XXX)
 echo "Created temp file: $tempfile"
 
+# EXIT: Occurs when the shell process itself exits
+# ERR: Occurs when a command or a shell built-in command completes with a non-zero status
+# DEBUG: A Boolean representing debug mode
 trap "echo \"Deleting $tempfile by Ctrl+C\"; rm -f $tempfile" EXIT
 
 echo "sleeping 100 ... Ctrl+C to end and delete tem file $tempfile"
