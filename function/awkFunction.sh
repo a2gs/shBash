@@ -14,4 +14,4 @@ func(){
 
 OUT="$1"_out
 
-func $1 $OUT "asd" "qwe
+func $1 $OUT "asd" "qwe"
