@@ -1,3 +1,4 @@
+[What is the difference between test, \[ and \[\[ ?](http://mywiki.wooledge.org/BashFAQ/031)
 
 |**Feature**|**new test** [[|**old test** [|**Example**|
 |--|--|--|--|
