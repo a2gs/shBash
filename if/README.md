@@ -1,5 +1,7 @@
 [What is the difference between test, \[ and \[\[ ?](http://mywiki.wooledge.org/BashFAQ/031)
 
+[2](https://stackoverflow.com/questions/3427872/whats-the-difference-between-and-in-bash/3427931#3427931)
+
 |**Feature**|**new test** [[|**old test** [|**Example**|
 |--|--|--|--|
 |String comparison|<code>></code>|<code>\\></code>|<code>[[ a > b ]] \|\| echo "a does not come after b"</code>|
