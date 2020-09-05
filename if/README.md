@@ -16,3 +16,11 @@
 |Expression grouping|<code>(...)</code>|<code>\\( ... \\)</code>|<code>[[ \$var = img* && (\$var = *.png \|\| \$var = *.jpg) ]] && echo "\$var starts with img and ends with .jpg or .png"</code>|
 |Pattern matching|<code>= (or ==)</code>||<code>[[ \$name = a* ]] \|\| echo "name does not start with an 'a': \$name"</code>|
 |Regular Expression matching|<code>=~</code>||<code>[[ \$(date) =~ ^Fri\\ ...\\ 13 ]] && echo "It's Friday the 13th!"</code>|
+
+
+|**Description**|**Primitive**|**Example**|
+|--|--|--|
+|Entry \(file or directory\) exists|<code>-e</code>|<code>[[ -e $config ]] && echo "config file exists: $config"</code>|
+|File is newer/older than other file|<code>-nt / -ot</code>|<code>[[ $file0 -nt $file1 ]] && echo "$file0 is newer than $file1"<code>|
+|Two files are the same|<code>-ef</code>|<code>[[ $input -ef $output ]] && { echo "will not overwrite input file: $input"; exit 1; }</code>|
+|Negation|<code>!</code>|<code>[[ ! -u $file ]] && echo "$file is not a setuid file"</code>|
