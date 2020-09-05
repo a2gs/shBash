@@ -5,7 +5,7 @@
 ||<code><|<code>\\<</code>|<code>[[ az < za ]] && echo "az comes before za"</code>|
 ||<code>= (or ==)</code>|<code>=</code>|<code>[[ a = a ]] && echo "a equals a"</code>|
 ||<code>!=</code>|<code>!=</code>|<code>[[ a != b ]] && echo "a is not equal to b"</code>|
-|Integer comparison|<code>-gt</code>|<code>-gt</code>|<code>[[ 5 -gt 10 ]] || echo "5 is not bigger than 10"</code>|
+|Integer comparison|<code>-gt</code>|<code>-gt</code>|<code>[[ 5 -gt 10 ]] \|\| echo "5 is not bigger than 10"</code>|
 ||<code>-lt</code>|<code>-lt</code>|<code>[[ 8 -lt 9 ]] && echo "8 is less than 9"</code>|
 ||<code>-ge</code>|<code>-ge</code>|<code>[[ 3 -ge 3 ]] && echo "3 is greater than or equal to 3"</code>|
 ||<code>-le</code>|<code>-le</code>|<code>[[ 3 -le 8 ]] && echo "3 is less than or equal to 8"</code>|
