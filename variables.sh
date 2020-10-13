@@ -21,3 +21,5 @@ echo -e '$@\tAll the arguments are individually double quoted. If a script recei
 echo -e '$?\tThe exit status of the last command executed.'
 echo -e '$$\tThe process number of the current shell. For shell scripts, this is the process ID under which they are executing.'
 echo -e '$!\tThe process number of the last background command.'
+echo -e '$-\tCurrent options set for the shell.'
+echo -r '$IFS\tDefault field separator (cut, sed, awk, etc).'
