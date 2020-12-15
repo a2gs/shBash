@@ -43,13 +43,11 @@ echo "OSTYPE.........: [$OSTYPE]"
 echo "SHELL..........: [$SHELL]"
 echo -e "DESKTOP_SESSION: [$DESKTOP_SESSION]\n"
 
-
 echo "LINENO.: [$LINENO]"
 echo "COLUMNS: [$COLUMNS]"
 echo -e "LINES..: [$LINES]\n"
 
 echo "RANDOM..: [$RANDOM]"
-
 funcName
 
 echo -e '\n----------------------------------\nBash Variables:\n'
