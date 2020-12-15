@@ -16,23 +16,6 @@
 
 echo "[$BASH_SOURCE] [$0]"
 
-echo "BASH....................: [$BASH]"
-echo "BASH_COMMAND............: [$BASH_COMMAND]"
-echo "BASHOPTS................: [$BASHOPTS]"
-echo "BASH_ARGV0..............: [$BASH_ARGV0]"
-echo "BASH_ARGV...............: [$BASH_ARGV]"
-echo "BASH_ARGC...............: [$BASH_ARGC]"
-echo "BASH_CMDS...............: [$BASH_CMDS]"
-echo "BASHPID.................: [$BASHPID]"
-echo "BASH_SOURCE.............: [$BASH_SOURCE]"
-echo "BASH_VERSION............: [$BASH_VERSION]"
-echo "BASH_VERSINFO...........: [$BASH_VERSINFO]"
-echo "BASH_ALIASES............: [$BASH_ALIASES]"
-echo "BASH_COMPLETION_VERSINFO: [$BASH_COMPLETION_VERSINFO]"
-echo "BASH_SUBSHELL...........: [$BASH_SUBSHELL]"
-echo "BASH_LINENO.............: [$BASH_LINENO]"
-echo "BASH_REMATCH............: [$BASH_REMATCH]"
-
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
 	echo "Script ${BASH_SOURCE[0]} without 'source'."
