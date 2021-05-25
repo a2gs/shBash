@@ -21,7 +21,11 @@ do
       a ) parameterA="$OPTARG" ;;
       b ) parameterB="$OPTARG" ;;
       c ) parameterC="$OPTARG" ;;
-      ? ) helpFunction ;; # Print helpFunction in case parameter is non-existent
+      \? ) helpFunction ;; # Print helpFunction in case parameter is non-existent
+      : )
+         echo "Invalid Option: -$OPTARG requires an argument"
+         exit 1
+         ;;
    esac
 done
 
