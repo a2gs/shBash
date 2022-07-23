@@ -1,11 +1,7 @@
 #!/bin/bash
 
-tempFile=`mktemp -p ./`
-
-dialog --menu "Choose one:" 10 30 3 1 red 2 green 3 blue 4 yellow 5 black 6 white 2>$tempFile
+opt=$(dialog --menu "Choose one:" 10 30 3 1 red 2 green 3 blue 4 yellow 5 black 6 white)
 
 clear
 
-echo "Return: [`cat $tempFile`]"
-
-rm -f $tempFile
+echo "[$opt]"
