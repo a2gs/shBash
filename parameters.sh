@@ -16,6 +16,7 @@ helpFunction()
 echo "Total parameters: $#"
 echo "They are: $@"
 
+OPTIND=1
 while getopts "a:b:cd:" opt
 do
    case "$opt" in
