@@ -50,7 +50,11 @@ if [ -v text2['ddd'] ]; then
     echo "key1 exists in a dictionary"
 fi
 
-text2["$valD"]='DDD'
+read -p "New key: " keyD
+read -p "Value: " valD
+
+text2["$keyD"]="$valD"
+
 unset text2['bbb']
 
 for key in "${!text2[@]}"; do
